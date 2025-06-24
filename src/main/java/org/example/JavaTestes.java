@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class java_testes {
+public class JavaTestes {
 
     public static List<String> gerarAnagramas(char[] letras) {
         if (letras == null || letras.length == 0) {
@@ -21,7 +21,6 @@ public class java_testes {
         StringBuilder atual = new StringBuilder();
 
         backtrack(letras, usados, atual, resultado);
-
         return resultado;
     }
 
@@ -36,18 +35,19 @@ public class java_testes {
 
             usados[i] = true;
             atual.append(letras[i]);
-
             backtrack(letras, usados, atual, resultado);
-
             atual.deleteCharAt(atual.length() - 1);
             usados[i] = false;
         }
     }
 
     public static void main(String[] args) {
+        System.out.println("Iniciando programa...");
+
         char[] letras = {'a', 'b', 'c'};
         List<String> anagramas = gerarAnagramas(letras);
-        System.out.println("Anagramas:");
+
+        System.out.println("Anagramas gerados:");
         for (String a : anagramas) {
             System.out.println(a);
         }
