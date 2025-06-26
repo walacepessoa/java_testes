@@ -1,88 +1,122 @@
 Projeto em Java com testes
 --------------------------
+<p>
+📌 Projeto: java_testes<br/>
+Descrição:<br/>
+Projeto Java desenvolvido no IntelliJ IDEA com foco em testes unitários utilizando JUnit 5. O objetivo é praticar e demonstrar o uso de testes automatizados para garantir a qualidade do código.<br/>
+<br/>
+🚀 Tecnologias utilizadas<br/>
+<br/>
+Java 17+<br/>
+IntelliJ IDEA<br/>
+JUnit 5<br/>
+Maven<br/>
+Git<br/>
+</p>
+✅ Instalação e configuração do projeto java_testes usando IntelliJ<br/>
+<br/>
+🧱 Cenário 1: Criar um novo projeto java_testes no IntelliJ<br/>
+1. Abra o IntelliJ IDEA<br/>
+Clique em "New Project"<br/>
 
-✅ Instalação e configuração do projeto java_testes usando IntelliJ
+2. Selecione o tipo de projeto<br/>
+Escolha Java<br/>
 
-🧱 Cenário 1: Criar um novo projeto java_testes no IntelliJ
-1. Abra o IntelliJ IDEA
-Clique em "New Project"
+SDK: selecione o Java 17 ou superior (ou clique em "Add SDK" para instalar)<br/>
 
-2. Selecione o tipo de projeto
-Escolha Java
+3. Configure:<br/>
+Project Name: java_testes<br/>
 
-SDK: selecione o Java 17 ou superior (ou clique em "Add SDK" para instalar)
+Location: selecione o diretório onde será salvo<br/>
 
-3. Configure:
-Project Name: java_testes
+4. (Opcional) Se quiser usar Maven:<br/>
+Marque "Add support for Maven"<br/>
 
-Location: selecione o diretório onde será salvo
+Isso criará o arquivo pom.xml automaticamente<br/>
 
-4. (Opcional) Se quiser usar Maven:
-Marque "Add support for Maven"
+5. Clique em Finish<br/>
+🧱 Cenário 2: Importar um projeto existente no IntelliJ<br/>
+Se você já tem o projeto salvo no seu computador ou clonado do GitHub:<br/>
 
-Isso criará o arquivo pom.xml automaticamente
+1. No IntelliJ, vá em:<br/>
+File > Open → selecione a pasta java_testes<br/>
 
-5. Clique em Finish
-🧱 Cenário 2: Importar um projeto existente no IntelliJ
-Se você já tem o projeto salvo no seu computador ou clonado do GitHub:
+2. Se for Maven ou Gradle:<br/>
+O IntelliJ detectará o pom.xml ou build.gradle e perguntará se deseja importar:<br/>
 
-1. No IntelliJ, vá em:
-File > Open → selecione a pasta java_testes
+Clique em Import Maven Project ou Import Gradle Project<br/>
 
-2. Se for Maven ou Gradle:
-O IntelliJ detectará o pom.xml ou build.gradle e perguntará se deseja importar:
+▶️ Executar o projeto<br/>
+Se tiver uma classe com public static void main(String[] args):<br/>
 
-Clique em Import Maven Project ou Import Gradle Project
+Abra o arquivo da classe principal<br/>
 
-▶️ Executar o projeto
-Se tiver uma classe com public static void main(String[] args):
+Clique no botão verde ▶️ ao lado do método main<br/>
 
-Abra o arquivo da classe principal
+Escolha Run 'JavaTestes.main()'<br/>
 
-Clique no botão verde ▶️ ao lado do método main
+🧪 Rodar testes (JUnit)<br/>
+Se você tiver testes:<br/>
 
-Escolha Run 'JavaTestes.main()'
+Acesse a pasta src/test/java<br/>
 
-🧪 Rodar testes (JUnit)
-Se você tiver testes:
+Clique com o botão direito em um arquivo de teste<br/>
 
-Acesse a pasta src/test/java
+Escolha Run 'JavaTestesTest'<br/>
 
-Clique com o botão direito em um arquivo de teste
+🧰 Usando Maven<br/>
+Se você estiver usando Maven, crie (ou verifique se tem) um arquivo pom.xml semelhante a:<br/>
+<project xmlns="http://maven.apache.org/POM/4.0.0" ...><br/>
+  <modelVersion>4.0.0</modelVersion><br/>
+  <groupId>com.seu.pacote</groupId><br/>
+  <artifactId>java_testes</artifactId><br/>
+  <version>1.0-SNAPSHOT</version><br/>
 
-Escolha Run 'JavaTestesTest'
+  <dependencies><br/>
+    <!-- Exemplo: JUnit para testes --><br/>
+    <dependency><br/>
+      <groupId>org.junit.jupiter</groupId><br/>
+      <artifactId>junit-jupiter</artifactId><br/>
+      <version>5.9.2</version><br/>
+      <scope>test</scope><br/>
+    </dependency><br/>
+  </dependencies><br/>
+</project><br/>
+Depois vá em View > Tool Windows > Maven e clique em Reload All Maven Projects.<br/>
 
-🧰 (Opcional) Usando Maven
-Se você estiver usando Maven, crie (ou verifique se tem) um arquivo pom.xml semelhante a:
-<project xmlns="http://maven.apache.org/POM/4.0.0" ...>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.seu.pacote</groupId>
-  <artifactId>java_testes</artifactId>
-  <version>1.0-SNAPSHOT</version>
+🚀 Pronto!<br/>
+Você agora pode:<br/>
 
-  <dependencies>
-    <!-- Exemplo: JUnit para testes -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <version>5.9.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-</project>
-Depois vá em View > Tool Windows > Maven e clique em Reload All Maven Projects.
+Codificar sua lógica em src/main/java<br/>
 
-🚀 Pronto!
-Você agora pode:
+Rodar e depurar diretamente do IntelliJ<br/>
 
-Codificar sua lógica em src/main/java
+Criar testes e executar com facilidade<br/>
 
-Rodar e depurar diretamente do IntelliJ
+Adicionar dependências pelo Maven (ou Gradle)<br/>
+</p>
+<p>
+📁 Estrutura Completa do Projeto java_testes<br/>
 
-Criar testes e executar com facilidade
+java_testes/<br/>
+├── pom.xml<br/>
+├── README.md                      # (opcional) Instruções do projeto<br/>
+└── src/<br/>
+    ├── main/<br/>
+    │   └── java/<br/>
+    │       └── org/
+    │           └── javatestes/<br/>
+    │               └── JavaTestes.java       # Classe principal<br/>
+    │<br/>
+    └── test/<br/>
+        └── java/<br/>
+            └── org/<br/>
+                └── javatestes/<br/>
+                    └── JavaTestesTest.java   # Classe de teste unitário<br/>
+</p>
 
-Adicionar dependências pelo Maven (ou Gradle)
-
-Criado por:
------------
-Walace Pessôa Rio de Janeiro, Brasil V01.01.00
+Criado por:<br/>
+-----------<br/>
+Walace Pessôa<br/>
+Rio de Janeiro, Brasil<br/>
+V01.01.00
